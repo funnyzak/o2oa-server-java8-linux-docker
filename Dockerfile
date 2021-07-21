@@ -33,16 +33,19 @@ RUN apk update && apk upgrade && \
     rm  -rf /tmp/* /var/cache/apk/*
 
 # 定义环境变量
-ENV WORK_HOME /usr/local
+ENV WORK_HOME /usr/local/o2server
 
-WORKDIR $WORK_HOME
+RUN mkdir -p $WORK_HOME
 
 ARG O2OA_LINUX_DOWNLINK=https://download.o2oa.net/download/${O2OA_LINUX_VERSION}.zip
 
 RUN wget --no-check-certificate -O app.zip $O2OA_LINUX_DOWNLINK
 RUN unzip app.zip
 RUN rm -f app.zip
-RUN mv -f o2server/* ./
+
+RUN mv ./o2server/* $WORK_HOME
+
+WORKDIR $WORK_HOME
 
 EXPOSE 80
 EXPOSE 8080
