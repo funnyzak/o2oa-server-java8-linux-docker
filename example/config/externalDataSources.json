@@ -1,6 +1,6 @@
 [
 	{
-		"url": "jdbc:mysql://127.0.0.1:3306/o2oa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC",      
+		"url": "jdbc:mysql://mysql:3306/o2oa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC",      
 		"username" : "u_o2oa",
 		"password" : "1234567@123",
 		"driverClassName" : "com.mysql.cj.jdbc.Driver",
