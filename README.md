@@ -5,14 +5,9 @@
 
 This image is based on Alpine Linux image, which is 2.3G+ image, and contains O2OA Server Java8 Linux (**o2server-6.2.1.java8-linux-x64**).
 
-Download size of this image is only:
-
-[![](https://images.microbadger.com/badges/image/funnyzak/o2oa-server-java8-linux.svg)](http://microbadger.com/images/funnyzak/o2oa-server-java8-linux "Get your own image badge on microbadger.com")
-
 [Docker hub image: funnyzak/o2oa-server-java8-linux](https://hub.docker.com/r/funnyzak/o2oa-server-java8-linux)
 
 Docker Pull Command: `docker pull funnyzak/o2oa-server-java8-linux`
-
 ---
 
 ## Usage Example
