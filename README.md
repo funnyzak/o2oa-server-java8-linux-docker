@@ -125,6 +125,18 @@ docker-compose up -d
 [系统配置-第三方数据库配置-MySQL@平台配置](https://www.yuque.com/o2oa/course/qlyse7)
 [系统配置-服务器端口冲突和端口修改@启动报错](https://www.yuque.com/o2oa/course/ugnw7f)
 
+### 获取服务器端口配置
+
+```html
+http://xxx.xxx.xxx.xxx:20030/x_program_center/jaxrs/distribute/webserver/assemble/source/xxx.xxx.xxx.xxx
+````
+以上改为服务器IP。
+
+### 其他说明
+
+* 如修改相应服务端口，请务必修改 **node.json**的 port 端口。
+
+
 ---
 
 ## Related Link
