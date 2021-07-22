@@ -120,7 +120,7 @@ docker-compose up -d
 
 **端口映射最好和默认端口一致，以免有意外问题**
 
-### 可用使用的配置
+### 可能使用的配置
 
 * [系统配置-第三方数据库配置-MySQL@平台配置](https://www.yuque.com/o2oa/course/qlyse7)
 * [系统配置-服务器端口冲突和端口修改@启动报错](https://www.yuque.com/o2oa/course/ugnw7f)
