@@ -120,10 +120,12 @@ docker-compose up -d
 
 **端口映射最好和默认端口一致，以免有意外问题**
 
-### 修改数据库
+### 可用使用的配置
 
 [系统配置-第三方数据库配置-MySQL@平台配置](https://www.yuque.com/o2oa/course/qlyse7)
 [系统配置-服务器端口冲突和端口修改@启动报错](https://www.yuque.com/o2oa/course/ugnw7f)
+[开发知识-单个端口模式的Nginx和系统配置](https://www.yuque.com/o2oa/course/ar1gnh)
+[OEM白标-如何修改平台中的Logo图标和文字](https://www.yuque.com/o2oa/course/qfbuga)
 
 ### 获取服务器端口配置
 
