@@ -1,7 +1,7 @@
 #基础镜像
 FROM funnyzak/alpine-glibc
 
-ARG O2OA_LINUX_VERSION=o2server-6.2.2.java8-linux-x64
+ARG O2OA_LINUX_VERSION=o2server-6.2.2.Java8-linux-x64
 
 LABEL org.label-schema.vendor="potato<silenceace@gmail.com>" \
     org.label-schema.name="O2OA" \
@@ -37,15 +37,17 @@ ENV WORK_HOME /usr/local/o2server
 
 RUN mkdir -p $WORK_HOME
 
-ARG O2OA_LINUX_DOWNLINK=https://download.o2oa.net/download/${O2OA_LINUX_VERSION}.zip
+WORKDIR $WORK_HOME
 
-RUN wget --no-check-certificate -O app.zip $O2OA_LINUX_DOWNLINK
-RUN unzip app.zip
-RUN rm -f app.zip
+ARG APP_ZIP_NAME=${O2OA_LINUX_VERSION}
+
+COPY app/${APP_ZIP_NAME}.zip $WORK_HOME/
+
+RUN unzip $WORK_HOME/${APP_ZIP_NAME}.zip
+RUN rm -f $WORK_HOME/${APP_ZIP_NAME}.zip
 
 RUN mv ./o2server/* $WORK_HOME
 
-WORKDIR $WORK_HOME
 
 EXPOSE 80
 EXPOSE 8080

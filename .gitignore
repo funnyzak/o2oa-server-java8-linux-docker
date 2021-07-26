@@ -2,3 +2,4 @@ docker-compose.yml
 test/
 o2server/
 db/
+app/*.zip
