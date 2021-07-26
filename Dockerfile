@@ -1,7 +1,7 @@
 #基础镜像
 FROM funnyzak/alpine-glibc
 
-ARG O2OA_LINUX_VERSION=o2server-6.2.1.java8-linux-x64
+ARG O2OA_LINUX_VERSION=o2server-6.2.2.java8-linux-x64
 
 LABEL org.label-schema.vendor="potato<silenceace@gmail.com>" \
     org.label-schema.name="O2OA" \

@@ -3,7 +3,7 @@ oc# O2OA Server Java8 Linux Docker
 [![Docker Stars](https://img.shields.io/docker/stars/funnyzak/o2oa-server-java8-linux.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/o2oa-server-java8-linux/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/funnyzak/o2oa-server-java8-linux.svg?style=flat-square)](https://hub.docker.com/r/funnyzak/o2oa-server-java8-linux/)
 
-This image is based on Alpine Linux image, which is 2.3G+ image, and contains O2OA Server Java8 Linux (**o2server-6.2.1.java8-linux-x64**).
+This image is based on Alpine Linux image, which is 1.4G+ image, and contains O2OA Server Java8 Linux (**o2server-6.2.2.java8-linux-x64**).
 
 [Docker hub image: funnyzak/o2oa-server-java8-linux](https://hub.docker.com/r/funnyzak/o2oa-server-java8-linux)
 
