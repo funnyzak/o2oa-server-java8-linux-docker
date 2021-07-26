@@ -39,8 +39,7 @@ RUN mkdir -p $WORK_HOME
 
 ARG O2OA_LINUX_DOWNLINK=https://download.o2oa.net/download/${O2OA_LINUX_VERSION}.zip
 
-RUN curl "$O2OA_LINUX_DOWNLINK" -H 'Host: download.o2oa.net' -H 'Connection: keep-alive' -H 'sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"' -H 'sec-ch-ua-mobile: ?0' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: cross-site' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-User: ?1' -H 'Sec-Fetch-Dest: document' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7' -H 'Cookie: Hm_lvt_b60277863000072d920be5d8bf17a09e=1627283388; Hm_lpvt_b60277863000072d920be5d8bf17a09e=1627283388; Hm_lvt_3bf86557bdd5f1d58ae181f0b61b0829=1627283388; Hm_lpvt_3bf86557bdd5f1d58ae181f0b61b0829=1627283388; __root_domain_v=.o2oa.net; _qddaz=QD.488827283388362; _qdda=3-1.1; _qddab=3-sagfwh.krkaiigq' --compressed --output './app.zip'
-
+RUN wget --no-check-certificate -O app.zip $O2OA_LINUX_DOWNLINK
 RUN unzip app.zip
 RUN rm -f app.zip
 
