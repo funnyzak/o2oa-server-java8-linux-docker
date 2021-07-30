@@ -87,6 +87,8 @@
     "sslEnable": false,
     "proxyHost": "",
     "weight": 100.0,
+    "port": "20001",
+    "proxyPort": "80",
     "dirAllowed": false,
     "statEnable": false,
     "statExclusions": "*.gif,*.jpg,*.png,*.ico",

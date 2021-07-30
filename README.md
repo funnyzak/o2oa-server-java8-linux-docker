@@ -43,7 +43,7 @@ services:
       - ./o2server/logs:/usr/local/o2server/logs
       - ./o2server/config:/usr/local/o2server/config
     ports:
-      - 82:80
+      - 20001:20001
       - 20020:20020 # 以下默认端口号和映射最好保持一致
       - 20030:20030
       - 20040:20040
